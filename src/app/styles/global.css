@@ -8,12 +8,13 @@ html {
 }
 
 body {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   width: 100%;
-  margin: 2rem auto;
-  padding: 0 2rem;
+  margin: auto;
+  /* padding: 0 2rem; */
   font-family: 'roboto', sans-serif;
 }
+
 
 h1 {
   font-family: 'roboto', sans-serif;
@@ -41,6 +42,14 @@ ul {
 
 a {
   color: var(--link-color-inactive) !important;
+} */
+
+div.mantine-Modal-root{
+  max-width: 100%;
+  width: calc(100dvw * var(--mantine-spacing));
+}
+.mantine-Modal-inner{
+  left:0
 }
 
 .mantine-NavLink-root[data-active='true'] {
@@ -61,6 +70,8 @@ a {
   --yellow: #fec100;
   --pink: #e7727f;
   --purple: #dca1b1;
+  --brown: #3B2F2F;
+  --subtitle-text: #c2c2c2;
   --nav-background-color: var(--brightGreen);
   --nav-hover-color: var(--teal);
   --title-text-color: var(--oliveGreen);
