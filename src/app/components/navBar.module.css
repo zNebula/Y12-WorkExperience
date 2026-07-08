@@ -5,7 +5,8 @@
   width: 100%;
   font-family: 'roboto', sans-serif;
   text-transform: uppercase;
-  background-color: var(--nav-background-color);
+  background-color: var(--brown);
+  color: var(--white);
   :hover {
     background-color: var(--nav-hover-color);
     * {
@@ -28,7 +29,7 @@
 
 .dropdown {
   position: absolute;
-  background-color: var(--nav-background-color);
+  background-color: var(--brown);
   top: 3.2rem;
   width: 100%;
 }

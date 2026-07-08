@@ -5,27 +5,35 @@ import Footer from './components/footer';
 
 export default function PageLayout({ children }: { children: React.ReactNode }) {
   return (
-    <Stack>
-      <Flex
-        justify='space-between'
-        align='center'
-      >
-        <Flex
+    <Stack w="100%" m="auto">
+      <Flex>
+          <Flex
+          justify='space-between'
+          w="40%"
           align='center'
-          gap='1rem'
+          bg="var(--brown)"
+          c="var(--white)"
+          p={20}
         >
-          <Image
-            h={50}
-            w='auto'
-            fit='contain'
-            src='/images/logo.jpg'
-          />
+          <Flex
+            align='center'
+            gap='1rem'
+          >
+            <Image
+              h={50}
+              w='auto'
+              fit='contain'
+              src='/images/logo.jpg'
+            />
 
-          <h1>Tenterden Folk Day Trust</h1>
+            <h1>Tenterden Folk Day Trust</h1>
+          </Flex>
         </Flex>
+        <NavBar />
       </Flex>
-      <NavBar />
+      <Stack w="100%" m="auto">
       {children}
+      </Stack>
       <Footer />
     </Stack>
   );
