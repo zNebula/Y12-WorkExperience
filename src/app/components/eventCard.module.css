@@ -1,0 +1,28 @@
+.eventCard{
+    background-color: var(--brown);
+    width: 100%;
+    margin-inline: auto;
+    transition: all 500ms ease-out;
+
+    
+}
+
+.eventCard:hover{
+        scale: 1.01;
+        transform: translateY(-2);
+        box-shadow: 1px 1px 3px;
+        
+}
+
+.eventTitle{
+    color: #FDFEFE;
+}
+
+.eventText {
+    color: var(--subtitle-text);
+}
+
+.eventDetails{
+    width: 60%;
+    flex-shrink: 0;
+}
